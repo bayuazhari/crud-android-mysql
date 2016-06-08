@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bayu.cvsuryakencana.UpdateProductActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Update Produk"
+        android:id="@+id/textView23"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID :"
+        android:id="@+id/textView24"
+        android:layout_alignBottom="@+id/etId"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etId"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/etName3"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Produk :"
+        android:id="@+id/textView25"
+        android:layout_alignBottom="@+id/etName3"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName3"
+        android:layout_below="@+id/etId"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diskripsi :"
+        android:id="@+id/textView26"
+        android:layout_alignBottom="@+id/etDesc2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etDesc2"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori :"
+        android:id="@+id/textView27"
+        android:layout_alignBottom="@+id/etCategory2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCategory2"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/etDesc2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga :"
+        android:id="@+id/textView28"
+        android:layout_alignBottom="@+id/etPrice2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etPrice2"
+        android:layout_below="@+id/etCategory2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/etCategory2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stok :"
+        android:id="@+id/textView29"
+        android:layout_alignBottom="@+id/etStock2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etStock2"
+        android:layout_below="@+id/etPrice2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/etPrice2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Produk"
+        android:id="@+id/btnUpdateProduct"
+        android:layout_below="@+id/etStock2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etStock2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Produk"
+        android:id="@+id/btnDeleteProduct"
+        android:layout_below="@+id/btnUpdateProduct"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnUpdateProduct" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:id="@+id/btnCancel6"
+        android:layout_below="@+id/btnDeleteProduct"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnDeleteProduct" />
+
+</RelativeLayout>

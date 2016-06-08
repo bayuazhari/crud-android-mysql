@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bayu.cvsuryakencana.AddDistributorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tambah Distributor"
+        android:id="@+id/textView49"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Distributor :"
+        android:id="@+id/textView50"
+        android:layout_alignBottom="@+id/etNameD"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNameD"
+        android:layout_below="@+id/textView49"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat :"
+        android:id="@+id/textView51"
+        android:layout_alignBottom="@+id/etAddressD"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etAddressD"
+        android:layout_below="@+id/etNameD"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView50" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kota :"
+        android:id="@+id/textView52"
+        android:layout_alignBottom="@+id/etCityD"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCityD"
+        android:layout_below="@+id/textView51"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/etAddressD" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. Telepon :"
+        android:id="@+id/textView53"
+        android:layout_alignBottom="@+id/etTelpD"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etTelpD"
+        android:layout_below="@+id/textView52"
+        android:layout_alignEnd="@+id/etCityD"
+        android:layout_alignStart="@+id/etCityD" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:id="@+id/btnAddD"
+        android:layout_below="@+id/textView53"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/etTelpD"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:id="@+id/btnCancelD"
+        android:layout_below="@+id/btnAddD"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnAddD" />
+
+</RelativeLayout>
